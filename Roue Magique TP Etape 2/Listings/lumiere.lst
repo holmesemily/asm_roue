@@ -1,0 +1,198 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000         ;*******************************************************
+                       ********************
+    2 00000000                 THUMB
+    3 00000000                 REQUIRE8
+    4 00000000                 PRESERVE8
+    5 00000000         
+    6 00000000         ;*******************************************************
+                       *******************
+    7 00000000         ;  Fichier FonctionEtape2.asm
+    8 00000000         ; Auteur : HOLMES Emily, RIST Samuel
+    9 00000000         ; Date :  12/11/2013
+   10 00000000         ;*******************************************************
+                       *******************
+   11 00000000         
+   12 00000000         ;***************IMPORT/EXPORT***************************
+                       *******************
+   13 00000000         
+   14 00000000                 EXPORT           Barette1
+   15 00000000                 EXPORT           Barette2
+   16 00000000         
+   17 00000000         ;*******************************************************
+                       *******************
+   18 00000000         
+   19 00000000         
+   20 00000000         
+   21 00000000         ;***************CONSTANTES******************************
+                       *******************
+   22 00000000         
+   23 00000000         
+   24 00000000         ;*******************************************************
+                       *******************
+   25 00000000         
+   26 00000000         
+   27 00000000         ;***************VARIABLES*******************************
+                       *******************
+   28 00000000                 AREA             MesDonnees, data, readwrite
+   29 00000000         ;*******************************************************
+                       *******************
+   30 00000000         
+   31 00000000 FF 00 FF 
+              00 FF 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+
+
+
+ARM Macro Assembler    Page 2 
+
+
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              FF 00 FF 
+              00 FF 00 Barette1
+                               DCW              0xFF, 0xFF, 0xFF, 0x00, 0x00, 0
+0, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 
+00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00,
+ 0xFF, 0xFF, 0xFF
+   32 00000060 00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 Barette2
+                               DCW              0x00, 0x00, 0x00, 0x00, 0x00, 0
+x00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00
+, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 0x00, 0x0
+0, 0x00, 0x00, 0x00, 0x00
+   33 000000C0         
+   34 000000C0         ;*******************************************************
+                       *******************
+   35 000000C0         
+   36 000000C0         
+   37 000000C0         ;***************CODE************************************
+                       *******************
+
+
+
+ARM Macro Assembler    Page 3 
+
+
+   38 000000C0                 AREA             moncode, code, readonly
+   39 00000000         ;*******************************************************
+                       *******************
+   40 00000000         
+   41 00000000         ;*******************************************************
+                       *******************
+   42 00000000                 END
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M3 --apcs=interw
+ork --depend=.\objects\lumiere.d -o.\objects\lumiere.o -I.\RTE\Device\STM32F107
+VC -I.\RTE\_R_el -IC:\Programdata\Keil\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Inc
+lude -IC:\Programdata\Keil\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include --
+predefine="__EVAL SETA 1" --predefine="__MICROLIB SETA 1" --predefine="__UVISIO
+N_VERSION SETA 534" --predefine="_RTE_ SETA 1" --predefine="STM32F10X_CL SETA 1
+" --predefine="_RTE_ SETA 1" --predefine="STM32F10X_CL SETA 1" --list=.\listing
+s\lumiere.lst Lumiere.asm
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+Barette1 00000000
+
+Symbol: Barette1
+   Definitions
+      At line 31 in file Lumiere.asm
+   Uses
+      At line 14 in file Lumiere.asm
+Comment: Barette1 used once
+Barette2 00000060
+
+Symbol: Barette2
+   Definitions
+      At line 32 in file Lumiere.asm
+   Uses
+      At line 15 in file Lumiere.asm
+Comment: Barette2 used once
+MesDonnees 00000000
+
+Symbol: MesDonnees
+   Definitions
+      At line 28 in file Lumiere.asm
+   Uses
+      None
+Comment: MesDonnees unused
+3 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+moncode 00000000
+
+Symbol: moncode
+   Definitions
+      At line 38 in file Lumiere.asm
+   Uses
+      None
+Comment: moncode unused
+1 symbol
+339 symbols in table

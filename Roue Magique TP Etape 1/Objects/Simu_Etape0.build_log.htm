@@ -21,14 +21,17 @@ Target DLL:      UL2CM3.DLL V1.163.9.0
 Dialog DLL:      TCM.DLL V1.48.0.0
  
 <h2>Project:</h2>
-U:\Documents\ASM\Roue Magique TP Etape 1\Etape_1.uvprojx
+U:\Documents\ASM\asm_roue\Roue Magique TP Etape 1\Etape_1.uvprojx
 Project File Date:  03/21/2022
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
-Build target 'Simulé'
+Rebuild target 'Simulé'
+assembling FonctionEtape.asm...
 assembling Principale.asm...
-Principale.asm(123): warning: A1581W: Added 2 bytes of padding at address 0x62
+Principale.asm(137): warning: A1581W: Added 2 bytes of padding at address 0x62
+assembling startup_stm32f10x_md.s...
+compiling system_stm32f10x.c...
 linking...
 Program Size: Code=4756 RO-data=268 RW-data=148 ZI-data=1028  
 ".\Objects\Simu_Etape0.axf" - 0 Error(s), 1 Warning(s).
@@ -58,10 +61,10 @@ Package Vendor: Keil
    * Component: ARM::CMSIS:CORE:5.4.0
 
    * Component: Keil::Device:Startup:1.0.0
-      Source file:   Device\Source\ARM\STM32F1xx_OPT.s
+      Source file:   Device\Source\ARM\startup_stm32f10x_md.s
       Source file:   Device\Source\system_stm32f10x.c
       Include file:  RTE_Driver\Config\RTE_Device.h
-      Source file:   Device\Source\ARM\startup_stm32f10x_md.s
+      Source file:   Device\Source\ARM\STM32F1xx_OPT.s
 Build Time Elapsed:  00:00:01
 </pre>
 </body>
